@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements IUnityAdsInitiali
         });
 
         UnityAds.initialize(getApplicationContext(), "YOUR_GAME_ID", true, this); // Place your game ID from unity dashboard 
-        bannerView = new BannerView(this, "Banner", new UnityBannerSize(320, 50));
+        bannerView = new BannerView(this, "PLACEMENT_ID", new UnityBannerSize(320, 50)); //Paste your placement ID from unity dashboard
         RelativeLayout relativeLayout = findViewById(R.id.bannerAd);
         relativeLayout.addView(bannerView);
         bannerView.setListener(new BannerView.IListener() {
